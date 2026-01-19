@@ -27,22 +27,25 @@
     border: none;
 }
 
-.grid-box{
+.grid-box {
     background-color: rgba(53, 17, 101, 0.4);
     padding: 40px;
     border-radius: 40px;
 }
-.grid-box img{
-    max-width: 60px; 
+
+.grid-box img {
+    max-width: 60px;
     margin-bottom: 16px;
 }
-.grid-box h4{
+
+.grid-box h4 {
     font-size: 1.5rem;
     font-weight: 700;
     color: white;
     margin-bottom: 16px;
 }
-.grid-box p{
+
+.grid-box p {
     line-height: 24px;
     color: white;
 }
@@ -224,142 +227,215 @@ nav ul li a,
 }
 
 /* why choose techwave style */
-.choose-techwave{
+.choose-techwave {
     background-color: #230E3D;
     padding: 120px 200px;
 }
-.choose-techwave h2{
+
+.choose-techwave h2 {
     color: white;
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 40px;
 }
-.premium-quality{
+
+.premium-quality {
     grid-area: premium-quality;
 }
-.mobile-friendly{
+
+.mobile-friendly {
     grid-area: mobile-friendly;
 }
-.global-community{
+
+.global-community {
     grid-area: global-community;
 }
-.exclusive-interviews{
+
+.exclusive-interviews {
     grid-area: exclusive-interviews;
 }
-.rich-resources{
+
+.rich-resources {
     grid-area: rich-resources;
 }
-.choose-techwave-container{
+
+.choose-techwave-container {
     display: grid;
     gap: 30px;
-    grid-template-areas: 
-    
-     "premium-quality      mobile-friendly      mobile-friendly"
-     "premium-quality      global-community     global-community"
-     "exclusive-interviews exclusive-interviews rich-resources";
+    grid-template-areas:
+
+        "premium-quality      mobile-friendly      mobile-friendly"
+        "premium-quality      global-community     global-community"
+        "exclusive-interviews exclusive-interviews rich-resources";
 }
 
 /*  */
-.feature-and-host{
+.feature-and-host {
     padding: 120px 200px;
     background-color: #1A0B2E;
 }
-.feature{
+
+.feature {
     margin-bottom: 120px;
 }
-.feature-card-container{
+
+.feature-card-container {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.feature h2{
+
+.feature h2 {
     text-align: center;
     color: white;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 40px;
 }
-.video{
+
+.video {
     width: 100%;
     max-width: 380px;
 }
-.feature-card .video-radius{
+
+.feature-card .video-radius {
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
 }
-.feature-card .video-details{
+
+.feature-card .video-details {
     padding: 24px;
     width: 100%;
     max-width: 380px;
     background-color: #250D44;
 }
-.video-details h4{
+
+.video-details h4 {
     font-size: 1.5rem;
     font-weight: 700;
     color: white;
     margin-bottom: 12px;
 }
-.video-details p{
+
+.video-details p {
     line-height: 24px;
     color: white;
     margin-bottom: 12px;
 }
-.video-details .duration{
+
+.video-details .duration {
     display: flex;
     align-items: center;
     gap: 6px;
 }
-.video-details{
+
+.video-details {
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
 }
 
 /* meet host */
-.meet-host{
+.meet-host {
     padding: 40px;
     background-color: rgba(53, 17, 101, 0.4);
     border-radius: 40px;
 }
-.meet-host h2{
+
+.meet-host h2 {
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
     color: white;
     margin-bottom: 40px;
 }
-.host-container{
+
+.host-container {
     display: flex;
     align-items: center;
     gap: 24px;
 }
-.host-details h4{
+
+.host-details h4 {
     font-size: 2rem;
     font-weight: 700;
     color: white;
     margin-bottom: 16px;
 }
-.host-details p{
+
+.host-details p {
     line-height: 24px;
     color: white;
     margin-bottom: 16px;
 }
-.host-social{
+
+.host-social {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.host-social .host-icon{
+
+.host-social .host-icon {
     display: flex;
     align-items: center;
     padding: 10px;
     border: 1px solid #533C72;
     border-radius: 50%;
 }
-.host-icon img{
+
+.host-icon img {
     width: 100%;
     max-width: 20px;
 }
+
+/* footer style */
+footer {
+    padding: 120px;
+    background-image: url(../assets/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-container h2 {
+    font-size: 3.75rem;
+    color: white;
+}
+
+.footer-container h2 span {
+    background: linear-gradient(15deg,
+            #F7E93F 0%,
+            #FB09B4 51%,
+            #9100F8 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-icon-card p {
+    color: white;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.copyright {
+    color: #FAFAFA;
+    line-height: 24px;
+}
+
 /* responsive style */
 @media screen and (max-width:576px) {
     header {
@@ -432,73 +508,114 @@ nav ul li a,
         padding: 40px 20px;
         text-align: center;
     }
-    .line{
+
+    .line {
         margin: 40px 0;
     }
-    .about-info{
-        grid-template-columns: repeat(2,1fr);
+
+    .about-info {
+        grid-template-columns: repeat(2, 1fr);
         gap: 76px;
     }
-    .info-card h2{
+
+    .info-card h2 {
         font-size: 2.3rem;
     }
 
-    .choose-techwave{
+    .choose-techwave {
         padding: 40px 20px;
     }
-    .choose-techwave h2{
+
+    .choose-techwave h2 {
         font-size: 2rem;
         margin-bottom: 16px;
     }
-    .grid-box{
+
+    .grid-box {
         margin: 0 auto;
         width: 100%;
         max-width: 400px;
     }
-    .grid-box h4{
+
+    .grid-box h4 {
         font-size: 1.375rem;
     }
-    .choose-techwave-container{
+
+    .choose-techwave-container {
         gap: 16px;
-        grid-template-areas: 
-        "premium-quality"
-        "mobile-friendly"
-        "global-community"
-        "exclusive-interviews"
-        "rich-resources";
+        grid-template-areas:
+            "premium-quality"
+            "mobile-friendly"
+            "global-community"
+            "exclusive-interviews"
+            "rich-resources";
     }
 
-    .feature-and-host{
-    padding: 40px 20px;
+    .feature-and-host {
+        padding: 40px 20px;
     }
-    .feature h2{
+
+    .feature h2 {
         font-size: 2rem;
         margin-bottom: 24px;
     }
-    .feature-card-container{
+
+    .feature-card-container {
         gap: 16px;
         flex-direction: column;
     }
-    .feature{
+
+    .feature {
         margin-bottom: 60px;
     }
-    .meet-host{
+
+    .meet-host {
         margin: 0 auto;
         padding: 24px;
         width: 100%;
         max-width: 400px;
     }
-    .meet-host h2{
+
+    .meet-host h2 {
         margin-bottom: 24px;
     }
-    .host-container{
+
+    .host-container {
         flex-direction: column;
     }
+
     .host-details h4,
-    .host-details p{
+    .host-details p {
         text-align: center;
     }
-    .host-social{
+
+    .host-social {
         justify-content: center;
     }
+
+    footer {
+        padding: 30px 20px;
+        background-color: #201143;
+        background-image: url(../assets/bottom-hero-bg.png);
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .footer-container {
+        margin:0 auto;
+        gap: 24px;
+        width: 100%;
+        max-width: 380px;
+    }
+    .footer-container h2{
+        margin-bottom: 0px;
+    }
+    .footer-icon {
+        width: 100%;
+        max-width: 280px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 }
