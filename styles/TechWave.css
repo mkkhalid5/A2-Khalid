@@ -260,6 +260,102 @@ nav ul li a,
      "exclusive-interviews exclusive-interviews rich-resources";
 }
 
+/*  */
+.feature-and-host{
+    padding: 120px 200px;
+    background-color: #1A0B2E;
+}
+.feature{
+    margin-bottom: 120px;
+}
+.feature-card-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.feature h2{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.feature-card .video-radius{
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+.feature-card .video-details{
+    padding: 24px;
+    width: 100%;
+    max-width: 380px;
+    background-color: #250D44;
+}
+.video-details h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+}
+.video-details p{
+    line-height: 24px;
+    color: white;
+    margin-bottom: 12px;
+}
+.video-details .duration{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.video-details{
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+/* meet host */
+.meet-host{
+    padding: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+.meet-host h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+}
+.host-container{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.host-details h4{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+}
+.host-details p{
+    line-height: 24px;
+    color: white;
+    margin-bottom: 16px;
+}
+.host-social{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.host-social .host-icon{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+}
+.host-icon img{
+    width: 100%;
+    max-width: 20px;
+}
 /* responsive style */
 @media screen and (max-width:576px) {
     header {
@@ -362,4 +458,34 @@ nav ul li a,
         "rich-resources";
     }
 
+    .feature-and-host{
+    padding: 40px 20px;
+    }
+    .feature h2{
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+    .feature-card-container{
+        gap: 16px;
+        flex-direction: column;
+    }
+    .feature{
+        margin-bottom: 60px;
+    }
+    .meet-host{
+        padding: 24px;
+    }
+    .meet-host h2{
+        margin-bottom: 24px;
+    }
+    .host-container{
+        flex-direction: column;
+    }
+    .host-details h4,
+    .host-details p{
+        text-align: center;
+    }
+    .host-social{
+        justify-content: center;
+    }
 }
